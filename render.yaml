@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: ecom-project
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn ecom.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: ecom.settings
+      - key: PYTHON_VERSION
+        value: 3.11.8

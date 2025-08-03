@@ -79,9 +79,9 @@
   <div class="col allbox" data-box-category="{{box.cloths}}">
     <div class="card">
     {% if box.image %}
-      <img style="width: 390px; height: 260px; object-fit:cover; " src="{{box.image.url}}" class="card-img-top" alt="...">
+    <img style="width: 100%; height: 260px; object-fit:cover; " src="{{box.image.url}}" class="card-img-top image-fluid" alt="...">
       {% else %}
-      <img src="{% static '103568-الملابس-الشتوية.webp'%}" class="card-img-top" alt="...">
+      <img src="{% static '103568-الملابس-الشتوية.webp'%}"  class="card-img-top image-fluid" alt="..."alt="..."  style="width: 100%; height: 260px; object-fit:cover; ">
 
       {% endif %}
      <div class="row card-body ">
