@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-ke@9b(g5qgl#$$jftxi)%4%rn9bunx^ss%924xzdjwrp14cj9s
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = [
+'http://captivating-optimism-production-82af.up.railway.app']
 
 # Application definition
 
